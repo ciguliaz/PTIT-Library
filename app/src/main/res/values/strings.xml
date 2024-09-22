@@ -3,5 +3,8 @@
     <string name="home">Trang Chủ</string>
     <string name="searching">Tìm Kiếm</string>
     <string name="saved">Đã Lưu</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="save">Đã lưu</string>
     <string name="information">Cá nhân</string>
+
 </resources>
