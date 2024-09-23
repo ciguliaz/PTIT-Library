@@ -6,5 +6,9 @@
     <string name="search">Tìm kiếm</string>
     <string name="save">Đã lưu</string>
     <string name="information">Cá nhân</string>
+    <string name="ptit_logo">PTIT logo</string>
+    <string name="login_text">Đăng nhập</string>
+    <string name="login_text_alternative">Hoặc đăng nhập với</string>
+    <string name="app_copyright_text">Copyright © 2024 Học viện Công nghệ Bưu chính Viễn thông\nVersion: BCVT-2024.V1</string>
 
 </resources>

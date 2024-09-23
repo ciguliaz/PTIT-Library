@@ -13,8 +13,8 @@
             android:id="@+id/btnVietnam"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp"
             android:layout_centerVertical="true"
             android:background="@android:color/transparent"
             android:src="@drawable/vi_1"
@@ -25,8 +25,8 @@
             android:id="@+id/btnUK"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
             android:layout_centerVertical="true"
             android:background="@android:color/transparent"
             android:src="@drawable/en_1"
@@ -44,9 +44,9 @@
 
         <ImageView
             android:id="@+id/logo"
-            android:layout_width="207px"
-            android:layout_height="207px"
-            android:layout_marginLeft="14px"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="0dp"
             android:layout_marginTop="0px"
             android:src="@drawable/image_1"
             android:scaleType="fitCenter"
@@ -54,9 +54,9 @@
 
         <Button
             android:id="@+id/login_button"
-            android:layout_width="250"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:text="Đăng nhập"
+            android:text="@string/login_text"
             android:textColor="#FFFFFF"
             android:backgroundTint="@color/primary"
             android:layout_marginTop="16dp" />
@@ -66,7 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Hoặc đăng nhập với"
+            android:text="@string/login_text_alternative"
             android:textColor="#000000"
             android:textSize="16sp"
             android:clickable="true"
@@ -75,12 +75,12 @@
 
         <ImageView
             android:id="@+id/fingersprint"
-            android:layout_width="207px"
-            android:layout_height="207px"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginTop="30dp"
-            android:src="@drawable/thumb_1"
+            android:alpha="1"
             android:scaleType="fitCenter"
-            android:alpha="1" />
+            android:src="@drawable/thumb_1" />
 
     </LinearLayout>
 
@@ -96,7 +96,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Copyright © 2024 Học viện Công nghệ Bưu chính Viễn thông\nVersion: BCVT-2024.V1"
+            android:text="@string/app_copyright_text"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:gravity="center" />
