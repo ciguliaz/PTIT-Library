@@ -16,5 +16,5 @@
     <item
         android:id="@+id/information"
         android:icon="@drawable/inf_ic"
-        android:title="@string/information"/>
+        android:title="@string/personal_page"/>
 </menu>

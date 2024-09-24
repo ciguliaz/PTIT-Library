@@ -33,7 +33,7 @@
 
     <!--    search bar-->
     <LinearLayout
-        android:id="@+id/function1"
+        android:id="@+id/personalInformationButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/frame_layout"
@@ -63,10 +63,10 @@
 
 
     <FrameLayout
-        android:id="@id/function2"
+        android:id="@id/changePasswordButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/function1"
+        app:layout_constraintTop_toBottomOf="@id/personalInformationButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -105,10 +105,10 @@
     </FrameLayout>
 
     <FrameLayout
-        android:id="@id/function3"
+        android:id="@id/settingButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/function2"
+        app:layout_constraintTop_toBottomOf="@id/changePasswordButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -147,7 +147,7 @@
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/function4"
+        android:id="@+id/technicalAssistButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -165,7 +165,7 @@
     </FrameLayout>
 
     <ImageView
-        app:layout_constraintTop_toTopOf="@id/function4"
+        app:layout_constraintTop_toTopOf="@id/technicalAssistButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

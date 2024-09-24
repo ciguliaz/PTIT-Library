@@ -25,11 +25,12 @@
             android:id="@+id/profile_image"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:layout_marginStart="170dp"
             android:src="@drawable/ic_profile"
             android:layout_marginTop="60dp"
             app:layout_constraintTop_toBottomOf="@id/navbar_top"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="170dp"
+            android:contentDescription="@string/greater_than_icon_description"
             app:layout_constraintEnd_toEndOf="parent" />
     </FrameLayout>
 
@@ -46,7 +47,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MSV: B21DCN000"
+            android:text="@string/user_id_test"
             android:textColor="@color/text"
             android:textSize="15sp"
             />
@@ -54,118 +55,169 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MSV: LỚP: E21CQPM04"
+            android:layout_marginStart="110dp"
             android:textColor="@color/text"
             android:textSize="15sp"
-            android:layout_marginLeft="110dp"
+            android:text="@string/user_class_id_test"
             />
 
     </LinearLayout>
 
-   <LinearLayout
-       android:id="@+id/function1"
-       android:layout_width="320dp"
-       android:layout_height="wrap_content"
-       android:orientation="horizontal"
-       android:layout_marginTop="50dp"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       android:background="@drawable/rounded_background"
-       app:layout_constraintTop_toBottomOf="@id/profile">
-
-       <ImageView
-           android:layout_width="30dp"
-           android:layout_height="30dp"
-           android:src="@drawable/ic1" />
-
-       <TextView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="Thông tin cá nhân"
-           android:textSize="18sp"
-           android:textColor="@color/text2"
-           android:layout_gravity="center_vertical"
-           android:layout_marginLeft="20dp"/>
-
-       <ImageView
-           android:layout_width="20dp"
-           android:layout_height="20dp"
-           android:src="@drawable/ic4"
-           android:layout_gravity="center"
-           android:layout_marginLeft="83dp"/>
-   </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/function2"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/personalInformationButton"
         android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/rounded_background"
-        app:layout_constraintTop_toBottomOf="@id/function1">
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile">
 
         <ImageView
+            android:id="@+id/personalInformationIcon"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/ic2" />
+            android:layout_marginStart="4dp"
+            android:contentDescription="@string/personal_information_icon_description"
+            android:src="@drawable/personal_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6"
+            app:layout_constraintWidth_toHeight="true" />
 
         <TextView
+            android:id="@+id/personalInformationLabel"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Đổi mật khẩu"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:text="@string/personal_information"
             android:textColor="@color/text2"
             android:textSize="18sp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="20dp"/>
+            app:layout_constraintStart_toEndOf="@+id/personalInformationIcon"
+            tools:layout_editor_absoluteY="3dp" />
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/ic4"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
             android:layout_gravity="center"
-            android:layout_marginLeft="120dp"/>
-    </LinearLayout>
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/greater_than_icon_description"
+            android:src="@drawable/greater_than_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.545" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
-        android:id="@+id/function3"
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/changePasswordButton"
         android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_height="30dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:background="@drawable/rounded_background"
-        app:layout_constraintTop_toBottomOf="@id/function2">
+        app:layout_constraintEnd_toEndOf="parent"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/personalInformationButton">
 
         <ImageView
+            android:id="@+id/lockIcon"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/ic3" />
+            android:layout_marginStart="4dp"
+            android:contentDescription="@string/lock_icon_description"
+            android:src="@drawable/lock_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6"
+            app:layout_constraintWidth_toHeight="true" />
 
         <TextView
+            android:id="@+id/changePasswordText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginStart="16dp"
+            android:text="@string/change_password_text"
+            android:textColor="@color/text2"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/lockIcon"
+            tools:layout_editor_absoluteY="3dp" />
 
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:src="@drawable/ic4"
-            android:layout_gravity="center"
-            android:layout_marginLeft="225dp"/>
-    </LinearLayout>
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/greater_than_icon_description"
+            android:src="@drawable/greater_than_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settingButton"
+        android:layout_width="320dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_background"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/changePasswordButton">
+
+        <ImageView
+            android:id="@+id/settingIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:contentDescription="@string/setting_icon_description"
+            android:src="@drawable/setting_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6"
+            app:layout_constraintWidth_toHeight="true" />
+
+        <TextView
+            android:id="@+id/settingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/setting_text"
+            android:textColor="@color/text2"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/settingIcon"
+            tools:layout_editor_absoluteY="3dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/greater_than_icon_description"
+            android:src="@drawable/greater_than_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
-        android:id="@+id/function4"
+        android:id="@+id/technicalAssistButton"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/function3"
+        app:layout_constraintTop_toBottomOf="@id/settingButton"
         android:padding="20dp"
         android:gravity="center"
         android:layout_marginTop="30dp"
@@ -174,25 +226,26 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/technical_assist_icon_description"
             android:src="@drawable/ic5"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hỗ trợ kĩ thuật"
-            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:text="@string/technical_assist_label"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="#21005D"/>
+            android:textColor="@color/text3"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/function5"
+        android:id="@+id/logoutButton"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/function4"
+        app:layout_constraintTop_toBottomOf="@id/technicalAssistButton"
         android:padding="5dp"
         android:gravity="center"
         android:layout_marginTop="80dp"
@@ -203,8 +256,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Đăng xuất"
-            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:text="@string/logout_text"
             android:textSize="20sp"
             android:textColor="#FFFFFF"/>
 
@@ -212,7 +265,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic6"
-            android:layout_marginLeft="150dp"/>
+            android:layout_marginStart="150dp"/>
     </LinearLayout>
 
    <FrameLayout
@@ -234,19 +287,17 @@
    </FrameLayout>
 
     <ImageView
-        app:layout_constraintTop_toTopOf="@id/function6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="80dp"
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ptit_ic" />
-
-
-
-
+        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/ptit_ic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/function6"
+        app:layout_constraintVertical_bias="0.218" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

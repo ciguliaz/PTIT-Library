@@ -27,6 +27,7 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:contentDescription="@string/user_avatar_description"
                 android:src="@drawable/generic_avatar" />
 
             <LinearLayout
@@ -37,14 +38,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nguyễn Văn A"
+                    android:text="@string/user_full_name_test"
                     android:textColor="@android:color/white"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="MSV: B21DCCN000"
+                    android:text="@string/user_id_test"
                     android:textColor="@android:color/white" />
             </LinearLayout>
         </LinearLayout>
@@ -77,7 +78,7 @@
         android:id="@+id/search_bar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Tìm kiếm"
+        android:hint="@string/search_bar_placeholder"
         android:drawableStart="@drawable/search_with_separator"
         android:drawablePadding="8dp"
         android:background="@drawable/search_background"
@@ -90,9 +91,9 @@
         android:id="@+id/collection"
         android:layout_width="390dp"
         android:layout_height="40dp"
-        android:text="Bộ sưu tập"
-        android:gravity="left"
-        android:textSize="16dp"
+        android:gravity="start"
+        android:text="@string/collection_text"
+        android:textSize="16sp"
         android:background="@drawable/button_selector"
         android:textColor="@color/white"
         android:drawableEnd="@drawable/ic_arrow_right"
@@ -120,18 +121,22 @@
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="160dp"
+                android:contentDescription="@string/featured_document_thumbnail_1_description"
                 android:src="@drawable/image_3"
                 android:layout_marginEnd="8dp" />
 
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="160dp"
+                android:contentDescription="@string/featured_document_thumbnail_2_description"
+
                 android:src="@drawable/image_4"
                 android:layout_marginEnd="8dp" />
 
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="160dp"
+                android:contentDescription="@string/featured_document_thumbnail_3_description"
                 android:src="@drawable/image_5"
                 android:layout_marginEnd="8dp" />
         </LinearLayout>
@@ -143,7 +148,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="left"
+        android:gravity="start"
         android:elevation="15dp"
         app:layout_constraintTop_toBottomOf="@id/book_collection"
         app:layout_constraintStart_toStartOf="parent"
@@ -153,7 +158,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="36dp"
-            android:text="Tác giả nổi bật"
+            android:text="@string/featured_author_title"
             android:background="@color/primary"
             android:textStyle="bold"
             android:textSize="18sp"
@@ -163,7 +168,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="36dp"
-            android:text="Bùi Xuân Phong"
+            android:text="@string/featured_author_name_1"
             android:background="@color/background2"
             android:textSize="18sp"
             android:textColor="@color/text"
@@ -172,7 +177,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="36dp"
-            android:text="Hoàng Xuân Diệu"
+            android:text="@string/featured_author_name_2"
             android:background="@color/background2"
             android:textSize="18sp"
             android:textColor="@color/text"
@@ -181,7 +186,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="36dp"
-            android:text="Trần Thị Hòa"
+            android:text="@string/featured_author_name_3"
             android:background="@color/background2"
             android:textSize="18sp"
             android:textColor="@color/text"
@@ -225,6 +230,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|bottom"
             android:layout_marginBottom="30dp"
+            android:contentDescription="@string/ptit_logo"
             android:elevation="10dp"
             android:src="@drawable/image_2" />
     </FrameLayout>

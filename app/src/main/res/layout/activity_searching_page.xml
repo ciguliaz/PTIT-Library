@@ -39,7 +39,7 @@
         </FrameLayout>
 
         <FrameLayout
-            android:id="@+id/function1"
+            android:id="@+id/personalInformationButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/frame_layout"
@@ -144,10 +144,10 @@
         </FrameLayout>
 
         <LinearLayout
-            android:id="@+id/function2"
+            android:id="@+id/changePasswordButton"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/function1"
+            app:layout_constraintTop_toBottomOf="@id/personalInformationButton"
             android:background="@drawable/rounded_background5"
             android:layout_width="350dp"
             android:layout_height="40dp"
@@ -173,7 +173,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/function3"
+            android:id="@+id/settingButton"
             android:layout_width="370dp"
             android:layout_height="35dp"
             android:orientation="horizontal"
@@ -181,7 +181,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:background="@drawable/rounded_background3"
-            app:layout_constraintTop_toBottomOf="@id/function2">
+            app:layout_constraintTop_toBottomOf="@id/changePasswordButton">
 
 
             <TextView
@@ -196,13 +196,13 @@
             <ImageView
                 android:layout_width="15dp"
                 android:layout_height="15dp"
-                android:src="@drawable/ic4"
+                android:src="@drawable/greater_than_icon"
                 android:layout_gravity="center"
                 android:layout_marginLeft="180dp"/>
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/function4"
+            android:id="@+id/technicalAssistButton"
             android:layout_width="370dp"
             android:layout_height="35dp"
             android:orientation="horizontal"
@@ -210,7 +210,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:background="@drawable/rounded_background3"
-            app:layout_constraintTop_toBottomOf="@id/function3">
+            app:layout_constraintTop_toBottomOf="@id/settingButton">
 
 
             <TextView
@@ -225,13 +225,13 @@
             <ImageView
                 android:layout_width="15dp"
                 android:layout_height="15dp"
-                android:src="@drawable/ic4"
+                android:src="@drawable/greater_than_icon"
                 android:layout_gravity="center"
                 android:layout_marginLeft="140dp"/>
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/function5"
+            android:id="@+id/logoutButton"
             android:layout_width="370dp"
             android:layout_height="35dp"
             android:orientation="horizontal"
@@ -239,7 +239,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:background="@drawable/rounded_background3"
-            app:layout_constraintTop_toBottomOf="@id/function4">
+            app:layout_constraintTop_toBottomOf="@id/technicalAssistButton">
 
 
             <TextView
@@ -254,7 +254,7 @@
             <ImageView
                 android:layout_width="15dp"
                 android:layout_height="15dp"
-                android:src="@drawable/ic4"
+                android:src="@drawable/greater_than_icon"
                 android:layout_gravity="center"
                 android:layout_marginLeft="235dp"/>
         </LinearLayout>
@@ -268,7 +268,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:background="@drawable/rounded_background3"
-            app:layout_constraintTop_toBottomOf="@id/function5">
+            app:layout_constraintTop_toBottomOf="@id/logoutButton">
 
 
             <TextView
@@ -283,7 +283,7 @@
             <ImageView
                 android:layout_width="15dp"
                 android:layout_height="15dp"
-                android:src="@drawable/ic4"
+                android:src="@drawable/greater_than_icon"
                 android:layout_gravity="center"
                 android:layout_marginLeft="225dp"/>
         </LinearLayout>
@@ -312,7 +312,7 @@
             <ImageView
                 android:layout_width="15dp"
                 android:layout_height="15dp"
-                android:src="@drawable/ic4"
+                android:src="@drawable/greater_than_icon"
                 android:layout_gravity="center"
                 android:layout_marginLeft="170dp"/>
         </LinearLayout>
@@ -341,7 +341,7 @@
             <ImageView
                 android:layout_width="15dp"
                 android:layout_height="15dp"
-                android:src="@drawable/ic4"
+                android:src="@drawable/greater_than_icon"
                 android:layout_gravity="center"
                 android:layout_marginLeft="225dp"/>
         </LinearLayout>
@@ -370,7 +370,7 @@
             <ImageView
                 android:layout_width="15dp"
                 android:layout_height="15dp"
-                android:src="@drawable/ic4"
+                android:src="@drawable/greater_than_icon"
                 android:layout_gravity="center"
                 android:layout_marginLeft="127dp"/>
         </LinearLayout>
@@ -399,7 +399,7 @@
             <ImageView
                 android:layout_width="15dp"
                 android:layout_height="15dp"
-                android:src="@drawable/ic4"
+                android:src="@drawable/greater_than_icon"
                 android:layout_gravity="center"
                 android:layout_marginLeft="175dp"/>
         </LinearLayout>
